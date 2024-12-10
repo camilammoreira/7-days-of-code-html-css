@@ -3,7 +3,7 @@
     --main-font: 'Inter', sans-serif;
     --primary-color: #8E2424;
     --highlight: rgba(142, 36, 36, 0.05);
-    --light-gray: #f3f3f3;
+    --light-gray: #EAECF0;
     --medium-gray: #667085;
     --dark-gray: #3A404E; 
     --dark: #101828;
@@ -157,4 +157,38 @@ button#signup {
 
 .jobs img {
     margin: 3rem 0;
+}
+.jobs__list {
+    text-align: left;
+    margin: 0 25vw;
+}
+
+.jobs__list__field {
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--dark);
+    padding: 2rem 0 1rem 0;
+}
+
+.jobs__list__item {
+    border-radius: 1rem;
+    border: 1px solid var(--light-gray);
+    padding: 2rem;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.jobs__list__title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+.jobs__list__info {
+    font-weight: 500;
+    color: var(--medium-gray);
+    display: flex;
+    gap: 1.5rem;
 }
