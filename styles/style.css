@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+:root {
+    --main-font: 'Inter', sans-serif;
+    --primary-color: #8E2424;
+    --light-gray: #f3f3f3;
+    --medium-gray: #667085;
+    --dark-gray: #3A404E; 
+    --dark: #101828;
 }
 
 body {
     width: 100%;
     height: 100vh;
+    box-sizing: border-box;
+    font-family: var(--main-font);
 }
 
 .navbar {
@@ -23,7 +27,7 @@ body {
 .navbar__logo {
     display: flex;
     align-items: center;
-    color: #3A404E;
+    color: var(--dark-gray);
     gap: 0.5rem;
     font-weight: 500;    
     text-decoration: none;
@@ -36,14 +40,14 @@ body {
 }
 
 .navbar__link {
-    color: #667085;
+    color: var(--medium-gray);
     text-decoration: none;
 }
 
 .navbar__cadastro {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 0.5rem;
 }
 
 button {
@@ -52,12 +56,17 @@ button {
     background-color: transparent;
     border-radius: 8px;
     padding: 0.8rem 1.3rem;
-    color: #667085;
+    color: var(--medium-gray);
     font-weight: 500;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-gray);
 }
 
 button#signup {
-    background-color: #8E2424;
+    background-color: var(--primary-color);
     color: #FFFFFF;
 }
 
@@ -65,24 +74,55 @@ button#signup {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 5rem 18rem;
+    margin: 5rem 15rem;
     gap: 2.5rem;
 }
 
 .titulo__secao {
-    color: #8E2424;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .about-us h1 {
     font-size: 3rem;
     font-weight: 600;
-    color: #101828;
+    color: var(--dark);
 }
 
 .about-us p {
-    color: #667085;
+    color: var(--medium-gray);
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.2rem;
+}
+
+.metrics-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 2rem 5rem;
+}
+
+.metrics-container__item {
+    padding: 0 1rem;
+}
+
+.metrics-container__title {
+    font-size: 3.75rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.metrics-container__subtitle {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: .5rem;
+}
+
+.metrics-container__description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--medium-gray);
+    line-height: 1.5rem;
 }

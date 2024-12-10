@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="logo.svg">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
+    <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>OptimusTech</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <a class="navbar__logo" href="/index.html">
-                <img src="logo.svg" alt="Logotipo OptimusTech">
+            <a class="navbar__logo" href="./index.html">
+                <img src="./assets/logo.svg" alt="Logotipo OptimusTech">
                 <p>OptimusTech</p>
             </a>
             <div class="navbar__sections">
@@ -20,18 +21,40 @@
                 <a class="navbar__link" href="#resources">Recursos</a>
                 <a class="navbar__link" href="#about-us">Sobre nós</a>
             </div>
-            <img src="blank.png">
-            <div class="cadastro">
+            <img src="./assets/blank.png">
+            <div class="navbar__cadastro">
                 <button href="#">Entrar</a>
                 <button id= "signup" href="#">Cadastrar</a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="about-us">
-            <span class="titulo__secao">Sobre nós</span>
+        <section class="about-us" id="about-us">
+            <h2 class="titulo__secao">Sobre nós</h2>
             <h1>Por que somos diferentes?</h1>
             <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+        </section>
+        <section class="metrics-container">
+            <div class="metrics-container__item">
+                <h2 class="metrics-container__title">400+</h2>
+                <p class="metrics-container__subtitle">Projetos concluídos</p>
+                <p class="metrics-container__description">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+            </div>
+            <div class="metrics-container__item">
+                <h2 class="metrics-container__title">100+</h2>
+                <p class="metrics-container__subtitle">Colaboradores</p>
+                <p class="metrics-container__description">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+            </div>
+            <div class="metrics-container__item">
+                <h2 class="metrics-container__title">20k</h2>
+                <p class="metrics-container__subtitle">Downloads</p>
+                <p class="metrics-container__description">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+            </div>
+            <div class="metrics-container__item">
+                <h2 class="metrics-container__title">500+</h2>
+                <p class="metrics-container__subtitle">Reviews 5 estrelas</p>
+                <p class="metrics-container__description">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+            </div>
         </section>
     </main>
     <footer>
