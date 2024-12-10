@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
     --main-font: 'Inter', sans-serif;
-    --primary-color: #8E2424;
+    --main-color: #8E2424;
     --highlight: rgba(142, 36, 36, 0.05);
+    --title-color: #101828;
+    --text-color: #667085;
     --light-gray: #EAECF0;
-    --medium-gray: #667085;
-    --dark-gray: #3A404E; 
-    --dark: #101828;
+    
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 .navbar__logo {
     display: flex;
     align-items: center;
-    color: var(--dark-gray);
+    color: #3A404E;
     gap: 0.5rem;
     font-weight: 500;    
     text-decoration: none;
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar__link {
-    color: var(--medium-gray);
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -52,24 +52,27 @@ body {
     gap: 0.5rem;
 }
 
-button {
+.signin, 
+.signup {
     border: none;
-    background-color: transparent;
     border-radius: 8px;
     padding: 0.8rem 1.3rem;
-    color: var(--medium-gray);
+    color: var(--text-color);
+    font-family: var(--main-font);
     font-weight: 500;
-    cursor: pointer;
+    text-decoration: none;
 }
 
-button:hover {
+.signin:hover {
     background-color: var(--light-gray);
 }
 
-button#signup {
-    background-color: var(--primary-color);
-    color: #FFFFFF;
+.signup {
+    background-color: var(--main-color);
+    color: white;
 }
+
+/* Seção sobre nós */
 
 .about-us {
     display: flex;
@@ -80,22 +83,24 @@ button#signup {
 }
 
 .about-us__title {
-    color: var(--primary-color);
+    color: var(--main-color);
     font-weight: 600;
 }
 
 .about-us h2 {
     font-size: 3rem;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--title-color);
 }
 
 .about-us p {
-    color: var(--medium-gray);
+    color: var(--text-color);
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.2rem;
 }
+
+/* Seção métricas */
 
 .metrics-container {
     display: grid;
@@ -111,52 +116,59 @@ button#signup {
 .metrics-container__title {
     font-size: 3.75rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--main-color);
     margin-bottom: 1.5rem;
 }
 
 .metrics-container__subtitle {
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--dark);
+    color: var(--title-color);
     margin-bottom: .5rem;
 }
 
 .metrics-container__description {
     font-weight: 400;
-    color: var(--medium-gray);
+    color: var(--text-color);
     line-height: 1.5rem;
 }
+
+/* Seção vagas - talentos*/
 
 .jobs {
     text-align: center;
 }
+
 .jobs__span {
     padding: .5rem .8rem;
     background-color: var(--highlight);
     border-radius: 1rem;
     font-weight: 500;
     font-size: .8rem;
-    color: var(--primary-color);
+    color: var(--main-color);
 }
 
 .jobs__title {
     font-weight: 600;
     font-size: 2.2rem;
-    color: var(--dark);
+    color: var(--title-color);
     margin: 2rem 0;
 }
 
 .jobs__text {
     font-weight: 400;
     font-size: 1.25rem;
-    color: var(--medium-gray);
+    color: var(--text-color);
     margin: 1rem 0;
 }
 
 .jobs img {
     margin: 3rem 0;
+    width: 90%;
 }
+
+/* Seção vagas - lista de vagas abertas */
+
 .jobs__list {
     text-align: left;
     margin: 0 25vw;
@@ -165,7 +177,7 @@ button#signup {
 .jobs__list__field {
     font-weight: 500;
     font-size: 1.25rem;
-    color: var(--dark);
+    color: var(--title-color);
     padding: 2rem 0 1rem 0;
 }
 
@@ -182,15 +194,17 @@ button#signup {
 .jobs__list__title {
     font-weight: 500;
     font-size: 1.2rem;
-    color: var(--dark);
+    color: var(--title-color);
 }
 
 .jobs__list__info {
     font-weight: 500;
-    color: var(--medium-gray);
+    color: var(--text-color);
     display: flex;
     gap: 1.5rem;
 }
+
+/* Seção depoimento */
 
 .feedback {
     background: var(--highlight);
@@ -204,14 +218,14 @@ button#signup {
 .feedback__span {
     font-weight: 600;
     font-size: .9rem;
-    color: var(--primary-color);
+    color: var(--main-color);
     margin: 1rem 0;
 }
 
 .feedback__text {
     font-weight: 500;
     font-size: 2.25rem;
-    color: var(--dark);
+    color: var(--title-color);
     margin: 1rem 0;
 }
 
@@ -221,13 +235,58 @@ button#signup {
 
 .worker__name {
     font-weight: 500;
-    color: var(--dark);
+    color: var(--title-color);
     margin-bottom: .5rem;
 }
 
 .worker__role {
     font-weight: 400;
     font-size: 0.9rem;
-    color: var(--medium-gray);
+    color: var(--text-color);
 }
 
+/* Rodapé */
+
+.footer {
+    background: #F9FAFB;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer__title {
+    font-weight: 600;
+    font-size: 2.25rem;
+    color: var(--title-color);
+}
+
+.footer__text {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+/*Formulário do rodapé */
+
+.footer__form {
+    display: flex;
+    gap: 1rem;
+}
+.email {
+    padding: .7rem;
+    border-radius: .3rem;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.email::placeholder {
+    font-family: var(--main-font);
+    color: var(--text-color);
+}
+
+.copyright {
+    font-weight: 400;
+    color: #98A2B3;
+}
